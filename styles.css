@@ -1,0 +1,68 @@
+.row {
+    border: 1px solid black;
+    height: 1em;
+    line-height: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gridInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #022E57;
+    color: white;
+    cursor: pointer;
+}
+
+.input {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#col_input {
+    margin-top: 20px;
+}
+
+#grid {
+    display: flex;
+    height: 800px;
+    width: 800px;
+    background: white;
+    margin: auto;
+}
+
+.col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+}
+
+.box {
+    flex: 1;
+    border: 1px solid grey;
+}
+
+#colorPallete {
+    display: flex;
+    flex-direction: column;
+}
+
+.color_choice {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
