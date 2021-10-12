@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a href="https://github.com/Vividh25/Vividh25.github.io"
+    <!-- <a href="https://github.com/Vividh25/Vividh25.github.io"
       >Check out the Source Code!</a
-    >
-    <div class="container">
-      <div id="gridInput">
-        <input class="input" id="row_input" type="number" placeholder="Rows" />
-        <input
-          class="input"
-          id="col_input"
-          type="number"
-          placeholder="Colums"
-        />
-      </div>
+    > -->
+    <h1 id="heading">Welcome! Please enter the dimensions of your grid</h1>
+    <div id="gridInput">
+      <input class="input" id="row_input" type="number" placeholder="Rows" />
+      <input class="input" id="col_input" type="number" placeholder="Columns" />
       <button class="btn" id="createGridBtn">Go</button>
-      <button class="btn" id="clearScreenBtn">Clear</button>
-      <div id="grid"></div>
+    </div>
+
+    <div class="container">
+      <div id="controlBtns">
+        <button class="btn" id="changeGridBtn">Change Grid</button>
+        <button class="btn" id="clearScreenBtn">Clear Grid</button>
+      </div>
+      <div id="grid" ondragstart="return false" ondrop="return false"></div>
+    </div>
+    <div id="editOptions">
+      <button id="eraserBtn">Eraser</button>
       <div id="colorPallete"></div>
     </div>
     <script src="main.js"></script>

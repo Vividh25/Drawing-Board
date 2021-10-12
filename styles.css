@@ -6,13 +6,20 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
+#heading {
+    text-align: center;
+    font-weight: 100;
+}
+
 #gridInput {
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .btn {
@@ -25,17 +32,20 @@
     cursor: pointer;
 }
 
+
 .input {
     border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
+    outline: none;
 }
 
 #col_input {
-    margin-top: 20px;
+    margin-left: 15px;
 }
 
 #grid {
+    margin-top: 10px;
     display: flex;
     height: 800px;
     width: 800px;
@@ -56,12 +66,48 @@
     border: 1px solid grey;
 }
 
+#controlBtns {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected_color {
+    border: 3px solid black;
+}
+
+#eraserBtn {
+    margin-left: 10px;
+    left: 79%;
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    color: 022E57;
+    cursor: pointer;
+}
+
+#editOptions {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
 #colorPallete {
     display: flex;
     flex-direction: column;
+    left: 80%;
+    top: 50%;
+    position: absolute;
+    margin-bottom: 10px;
 }
 
 .color_choice {
+    box-sizing: border-box;
     cursor: pointer;
     height: 50px;
     width: 50px;
